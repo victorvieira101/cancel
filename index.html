@@ -85,8 +85,50 @@ box
 	<body>
         <div class="box back center example">
     <div >You Have Successfully Canceled Your Order</div>
-
+<!--
 <img src="https://res.cloudinary.com/cloudvictor/image/upload/v1584509528/Capture_a42fw1.png" alt="Cancel order picture"align="middle"width="50%" height="50%" >
+-->
+		
+<!--Drop down Start -->
+<style>
+.dropbtn {
+  background-color: purple;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn2 {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+<button onclick="showCarName();"class="dropbtn2" >Go</button>
 
+        <select id="carNames"class="dropbtn">
+            <option value="If you are not satisfied in the service given. You will have 30 days to have a guaranteed Full Refund.">Return Policy</option>
+            <option value="You can refund the entire amount of a transaction or portions of it. The default refund period is 180 days from the transaction date. If you refund a payment for goods or services, there are no fees to process the refund, but the fees you originally paid as the seller are not returned to you.">PayPal Policy</option>
+            <option value="If you are not satisfied of the service receive and would like to Report. Please Go to ''Report Service''. This section can be located at the bottom of the main page. ">Make A Complaint</option>
+        </select>
+		<!--
+		<FORM>
+		<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+		</FORM>-->
+<script>
+function showCarName(){
+      //First grab your select
+    var select = document.getElementById("carNames");
+      //Then get it's value
+    var carName = select.value;
+      //After that you just need to write it somewhere in the document
+    document.write(carName);
+}
+</script>
+<!--Drop down End -->
 </div>
 </html>
